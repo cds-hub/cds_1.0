@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col>
+      <ion-list inset>
+        <ion-item>
+          <ion-input placeholder="Nome de Usuario" type="text" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="E-mail" type="text" #mail></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Data de Nascimento</ion-label>
+          <ion-datetime displayFormat="MM DD YY" placeholder="Selecione a Data"></ion-datetime>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>Bairro</ion-label>
+          <ion-select placeholder="Selecione um bairro">
+            <ion-select-option value="olaria">Olaria</ion-select-option>
+            <ion-select-option value="ramos">Ramos</ion-select-option>
+            <ion-select-option value="olaria">Olaria</ion-select-option>
+            <ion-select-option value="mage">Mage</ion-select-option>
+            <ion-select-option value="caju">Caju</ion-select-option>
+            <ion-select-option value="pinheiro">Pinheiro</ion-select-option>
+            <ion-select-option value="nova holanda">Nova Holanda</ion-select-option>
+            <ion-select-option value="parque uniao">Parque Uniao</ion-select-option>
+            <ion-select-option value="vila isabel">Vila Isabel</ion-select-option>
+            <ion-select-option value="itaborai">Itaborai</ion-select-option>
+            <ion-select-option value="piabeta">Piabeta</ion-select-option>
+            <ion-select-option value="teresopolis">Teresopolis</ion-select-option>
+            <ion-select-option value="petropolis">Petropolis</ion-select-option>
+            <ion-select-option value="bonsucesso">Bonssuceso</ion-select-option>
+            <ion-select-option value="campo grande">Campo Grande</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Senha" type="password" #password></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Repetir Senha" type="password" #password></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button ion-button class="submit-btn" (click)="logIn(mail.value,password.value)" type="submit">Login
+      </button>
+    </ion-col>
+  </ion-row>
+  <ion-item href="login">
+    <ion-icon slot="start" color="medium" name="book"></ion-icon>
+    <ion-label>Login</ion-label>
+  </ion-item>
+</ion-content>
