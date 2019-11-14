@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'cadastro', loadChildren: './cadastro/cadastro.module#CadastroPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'tela', loadChildren: './tela/tela.module#TelaPageModule' },
-  { path: 'curso', loadChildren: './cursos/cursos.module#CursosPageModule' },
+  { path: 'cursos', loadChildren: './cursos/cursos.module#CursosPageModule' },
   { path: 'eventos', loadChildren: './eventos/eventos.module#EventosPageModule' },
   { path: 'workshop', loadChildren: './workshop/workshop.module#WorkshopPageModule' },
   { path: 'palestra', loadChildren: './palestra/palestra.module#PalestraPageModule' },
